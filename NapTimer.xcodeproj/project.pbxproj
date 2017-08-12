@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CA014A81E7FC6B3007A382A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA014A71E7FC6B3007A382A /* SettingViewController.swift */; };
+		2CA014B21E7FDA57007A382A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA014B01E7FDA57007A382A /* Interface.storyboard */; };
+		2CA014B41E7FDA57007A382A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA014B31E7FDA57007A382A /* Assets.xcassets */; };
+		2CA014BB1E7FDA58007A382A /* NapTimerWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2CA014BA1E7FDA58007A382A /* NapTimerWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2CA014C01E7FDA58007A382A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA014BF1E7FDA58007A382A /* InterfaceController.swift */; };
+		2CA014C21E7FDA58007A382A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA014C11E7FDA58007A382A /* ExtensionDelegate.swift */; };
+		2CA014C41E7FDA58007A382A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA014C31E7FDA58007A382A /* Assets.xcassets */; };
+		2CA014C81E7FDA58007A382A /* NapTimerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2CA014AE1E7FDA57007A382A /* NapTimerWatch.app */; };
+		2CFEBADD1E7F63E200D9FBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEBADC1E7F63E200D9FBD4 /* AppDelegate.swift */; };
+		2CFEBADF1E7F63E200D9FBD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEBADE1E7F63E200D9FBD4 /* ViewController.swift */; };
+		2CFEBAE21E7F63E200D9FBD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFEBAE01E7F63E200D9FBD4 /* Main.storyboard */; };
+		2CFEBAE41E7F63E300D9FBD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CFEBAE31E7F63E300D9FBD4 /* Assets.xcassets */; };
+		2CFEBAE71E7F63E300D9FBD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFEBAE51E7F63E300D9FBD4 /* LaunchScreen.storyboard */; };
+		2CFEBAF51E7FBC8000D9FBD4 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CFEBAF41E7FBC8000D9FBD4 /* alarm.mp3 */; };
+		AB45BBAE1E83790C00A0DB00 /* CenterInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB45BBAD1E83790C00A0DB00 /* CenterInterfaceController.swift */; };
+		AB45BBB01E83797600A0DB00 /* MinInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB45BBAF1E83797600A0DB00 /* MinInterfaceController.swift */; };
+		ABBE2C761E84AC9900CC34C3 /* MinSecondInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBE2C751E84AC9900CC34C3 /* MinSecondInterfaceController.swift */; };
+		ABBE2C781E84B55C00CC34C3 /* MinThirdInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBE2C771E84B55C00CC34C3 /* MinThirdInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CA014BC1E7FDA58007A382A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CFEBAD11E7F63E200D9FBD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CA014B91E7FDA58007A382A;
+			remoteInfo = "NapTimerWatch Extension";
+		};
+		2CA014C61E7FDA58007A382A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CFEBAD11E7F63E200D9FBD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CA014AD1E7FDA57007A382A;
+			remoteInfo = NapTimerWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CA014CC1E7FDA58007A382A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2CA014BB1E7FDA58007A382A /* NapTimerWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CA014D01E7FDA58007A382A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2CA014C81E7FDA58007A382A /* NapTimerWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2CA014A71E7FC6B3007A382A /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		2CA014AE1E7FDA57007A382A /* NapTimerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NapTimerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA014B11E7FDA57007A382A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2CA014B31E7FDA57007A382A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CA014B51E7FDA57007A382A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA014BA1E7FDA58007A382A /* NapTimerWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NapTimerWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA014BF1E7FDA58007A382A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2CA014C11E7FDA58007A382A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2CA014C31E7FDA58007A382A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CA014C51E7FDA58007A382A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CFEBAD91E7F63E200D9FBD4 /* NapTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NapTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CFEBADC1E7F63E200D9FBD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CFEBADE1E7F63E200D9FBD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CFEBAE11E7F63E200D9FBD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CFEBAE31E7F63E300D9FBD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CFEBAE61E7F63E300D9FBD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CFEBAE81E7F63E300D9FBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CFEBAF41E7FBC8000D9FBD4 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		AB45BBAD1E83790C00A0DB00 /* CenterInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CenterInterfaceController.swift; path = "NapTimerWatch Extension/CenterInterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		AB45BBAF1E83797600A0DB00 /* MinInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MinInterfaceController.swift; path = "NapTimerWatch Extension/MinInterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		ABBE2C751E84AC9900CC34C3 /* MinSecondInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinSecondInterfaceController.swift; sourceTree = "<group>"; };
+		ABBE2C771E84B55C00CC34C3 /* MinThirdInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinThirdInterfaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CA014B71E7FDA58007A382A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CFEBAD61E7F63E200D9FBD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CA014AF1E7FDA57007A382A /* NapTimerWatch */ = {
+			isa = PBXGroup;
+			children = (
+				2CA014B01E7FDA57007A382A /* Interface.storyboard */,
+				2CA014B31E7FDA57007A382A /* Assets.xcassets */,
+				2CA014B51E7FDA57007A382A /* Info.plist */,
+			);
+			path = NapTimerWatch;
+			sourceTree = "<group>";
+		};
+		2CA014BE1E7FDA58007A382A /* NapTimerWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2CA014BF1E7FDA58007A382A /* InterfaceController.swift */,
+				AB45BBAD1E83790C00A0DB00 /* CenterInterfaceController.swift */,
+				AB45BBAF1E83797600A0DB00 /* MinInterfaceController.swift */,
+				ABBE2C751E84AC9900CC34C3 /* MinSecondInterfaceController.swift */,
+				ABBE2C771E84B55C00CC34C3 /* MinThirdInterfaceController.swift */,
+				2CA014C11E7FDA58007A382A /* ExtensionDelegate.swift */,
+				2CA014C31E7FDA58007A382A /* Assets.xcassets */,
+				2CA014C51E7FDA58007A382A /* Info.plist */,
+			);
+			path = "NapTimerWatch Extension";
+			sourceTree = "<group>";
+		};
+		2CFEBAD01E7F63E200D9FBD4 = {
+			isa = PBXGroup;
+			children = (
+				2CFEBADB1E7F63E200D9FBD4 /* NapTimer */,
+				2CA014AF1E7FDA57007A382A /* NapTimerWatch */,
+				2CA014BE1E7FDA58007A382A /* NapTimerWatch Extension */,
+				2CFEBADA1E7F63E200D9FBD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CFEBADA1E7F63E200D9FBD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CFEBAD91E7F63E200D9FBD4 /* NapTimer.app */,
+				2CA014AE1E7FDA57007A382A /* NapTimerWatch.app */,
+				2CA014BA1E7FDA58007A382A /* NapTimerWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CFEBADB1E7F63E200D9FBD4 /* NapTimer */ = {
+			isa = PBXGroup;
+			children = (
+				2CFEBADC1E7F63E200D9FBD4 /* AppDelegate.swift */,
+				2CFEBADE1E7F63E200D9FBD4 /* ViewController.swift */,
+				2CA014A71E7FC6B3007A382A /* SettingViewController.swift */,
+				2CFEBAEE1E7F64DA00D9FBD4 /* Common */,
+				2CFEBAE01E7F63E200D9FBD4 /* Main.storyboard */,
+				2CFEBAE31E7F63E300D9FBD4 /* Assets.xcassets */,
+				2CFEBAE51E7F63E300D9FBD4 /* LaunchScreen.storyboard */,
+				2CFEBAE81E7F63E300D9FBD4 /* Info.plist */,
+			);
+			path = NapTimer;
+			sourceTree = "<group>";
+		};
+		2CFEBAEE1E7F64DA00D9FBD4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2CFEBAF41E7FBC8000D9FBD4 /* alarm.mp3 */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CA014AD1E7FDA57007A382A /* NapTimerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CA014CD1E7FDA58007A382A /* Build configuration list for PBXNativeTarget "NapTimerWatch" */;
+			buildPhases = (
+				2CA014AC1E7FDA57007A382A /* Resources */,
+				2CA014CC1E7FDA58007A382A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CA014BD1E7FDA58007A382A /* PBXTargetDependency */,
+			);
+			name = NapTimerWatch;
+			productName = NapTimerWatch;
+			productReference = 2CA014AE1E7FDA57007A382A /* NapTimerWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2CA014B91E7FDA58007A382A /* NapTimerWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CA014C91E7FDA58007A382A /* Build configuration list for PBXNativeTarget "NapTimerWatch Extension" */;
+			buildPhases = (
+				2CA014B61E7FDA58007A382A /* Sources */,
+				2CA014B71E7FDA58007A382A /* Frameworks */,
+				2CA014B81E7FDA58007A382A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NapTimerWatch Extension";
+			productName = "NapTimerWatch Extension";
+			productReference = 2CA014BA1E7FDA58007A382A /* NapTimerWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		2CFEBAD81E7F63E200D9FBD4 /* NapTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CFEBAEB1E7F63E300D9FBD4 /* Build configuration list for PBXNativeTarget "NapTimer" */;
+			buildPhases = (
+				2CFEBAD51E7F63E200D9FBD4 /* Sources */,
+				2CFEBAD61E7F63E200D9FBD4 /* Frameworks */,
+				2CFEBAD71E7F63E200D9FBD4 /* Resources */,
+				2CA014D01E7FDA58007A382A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CA014C71E7FDA58007A382A /* PBXTargetDependency */,
+			);
+			name = NapTimer;
+			productName = NapTimer;
+			productReference = 2CFEBAD91E7F63E200D9FBD4 /* NapTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CFEBAD11E7F63E200D9FBD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "2017 Misky";
+				TargetAttributes = {
+					2CA014AD1E7FDA57007A382A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PQANXD2T99;
+						ProvisioningStyle = Automatic;
+					};
+					2CA014B91E7FDA58007A382A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PQANXD2T99;
+						ProvisioningStyle = Automatic;
+					};
+					2CFEBAD81E7F63E200D9FBD4 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PQANXD2T99;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2CFEBAD41E7F63E200D9FBD4 /* Build configuration list for PBXProject "NapTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CFEBAD01E7F63E200D9FBD4;
+			productRefGroup = 2CFEBADA1E7F63E200D9FBD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CFEBAD81E7F63E200D9FBD4 /* NapTimer */,
+				2CA014AD1E7FDA57007A382A /* NapTimerWatch */,
+				2CA014B91E7FDA58007A382A /* NapTimerWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CA014AC1E7FDA57007A382A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA014B41E7FDA57007A382A /* Assets.xcassets in Resources */,
+				2CA014B21E7FDA57007A382A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CA014B81E7FDA58007A382A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA014C41E7FDA58007A382A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CFEBAD71E7F63E200D9FBD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CFEBAF51E7FBC8000D9FBD4 /* alarm.mp3 in Resources */,
+				2CFEBAE71E7F63E300D9FBD4 /* LaunchScreen.storyboard in Resources */,
+				2CFEBAE41E7F63E300D9FBD4 /* Assets.xcassets in Resources */,
+				2CFEBAE21E7F63E200D9FBD4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CA014B61E7FDA58007A382A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABBE2C781E84B55C00CC34C3 /* MinThirdInterfaceController.swift in Sources */,
+				2CA014C21E7FDA58007A382A /* ExtensionDelegate.swift in Sources */,
+				2CA014C01E7FDA58007A382A /* InterfaceController.swift in Sources */,
+				AB45BBB01E83797600A0DB00 /* MinInterfaceController.swift in Sources */,
+				ABBE2C761E84AC9900CC34C3 /* MinSecondInterfaceController.swift in Sources */,
+				AB45BBAE1E83790C00A0DB00 /* CenterInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CFEBAD51E7F63E200D9FBD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CFEBADF1E7F63E200D9FBD4 /* ViewController.swift in Sources */,
+				2CFEBADD1E7F63E200D9FBD4 /* AppDelegate.swift in Sources */,
+				2CA014A81E7FC6B3007A382A /* SettingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CA014BD1E7FDA58007A382A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CA014B91E7FDA58007A382A /* NapTimerWatch Extension */;
+			targetProxy = 2CA014BC1E7FDA58007A382A /* PBXContainerItemProxy */;
+		};
+		2CA014C71E7FDA58007A382A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CA014AD1E7FDA57007A382A /* NapTimerWatch */;
+			targetProxy = 2CA014C61E7FDA58007A382A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CA014B01E7FDA57007A382A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CA014B11E7FDA57007A382A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		2CFEBAE01E7F63E200D9FBD4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CFEBAE11E7F63E200D9FBD4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CFEBAE51E7F63E300D9FBD4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CFEBAE61E7F63E300D9FBD4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CA014CA1E7FDA58007A382A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = PQANXD2T99;
+				INFOPLIST_FILE = "NapTimerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.misky.NapTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		2CA014CB1E7FDA58007A382A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = PQANXD2T99;
+				INFOPLIST_FILE = "NapTimerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.misky.NapTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		2CA014CE1E7FDA58007A382A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQANXD2T99;
+				IBSC_MODULE = NapTimerWatch_Extension;
+				INFOPLIST_FILE = NapTimerWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.misky.NapTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		2CA014CF1E7FDA58007A382A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQANXD2T99;
+				IBSC_MODULE = NapTimerWatch_Extension;
+				INFOPLIST_FILE = NapTimerWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.misky.NapTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		2CFEBAE91E7F63E300D9FBD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CFEBAEA1E7F63E300D9FBD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CFEBAEC1E7F63E300D9FBD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQANXD2T99;
+				INFOPLIST_FILE = NapTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.misky.NapTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2CFEBAED1E7F63E300D9FBD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQANXD2T99;
+				INFOPLIST_FILE = NapTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.misky.NapTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CA014C91E7FDA58007A382A /* Build configuration list for PBXNativeTarget "NapTimerWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA014CA1E7FDA58007A382A /* Debug */,
+				2CA014CB1E7FDA58007A382A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CA014CD1E7FDA58007A382A /* Build configuration list for PBXNativeTarget "NapTimerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA014CE1E7FDA58007A382A /* Debug */,
+				2CA014CF1E7FDA58007A382A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CFEBAD41E7F63E200D9FBD4 /* Build configuration list for PBXProject "NapTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CFEBAE91E7F63E300D9FBD4 /* Debug */,
+				2CFEBAEA1E7F63E300D9FBD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CFEBAEB1E7F63E300D9FBD4 /* Build configuration list for PBXNativeTarget "NapTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CFEBAEC1E7F63E300D9FBD4 /* Debug */,
+				2CFEBAED1E7F63E300D9FBD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CFEBAD11E7F63E200D9FBD4 /* Project object */;
+}

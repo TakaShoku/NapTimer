@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NapTimerWatch" customModuleProvider="target">
+                    <items>
+                        <timer width="136" height="79" alignment="left" textAlignment="center" id="sLV-id-TE3">
+                            <fontDescription key="font" type="system" pointSize="30"/>
+                        </timer>
+                        <button width="136" height="30" alignment="left" title="昼寝開始" id="fd4-Fz-orh">
+                            <color key="backgroundColor" red="0.25026634430317879" green="0.59796423145428257" blue="0.62827339385474867" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="StartAction" destination="AgC-eL-Hgc" id="wBd-h0-zWJ"/>
+                            </connections>
+                        </button>
+                        <button width="136" height="30" alignment="left" title="時間変更" id="Wkw-ct-5nt">
+                            <color key="backgroundColor" red="0.40073525910000002" green="0.6465337873" blue="0.68632298709999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="4jy-NV-MOq" kind="push" id="KqD-lc-9xw"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="myCountDownTimer" destination="sLV-id-TE3" id="dEU-EZ-3rx"/>
+                        <outlet property="myTimerButton" destination="fd4-Fz-orh" id="UBm-fl-ccB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="79" y="62"/>
+        </scene>
+        <!--Center Interface Controller-->
+        <scene sceneID="9eD-7r-qOF">
+            <objects>
+                <controller id="4jy-NV-MOq" customClass="CenterInterfaceController" customModule="NapTimerWatch_Extension">
+                    <items>
+                        <button width="136" alignment="left" verticalAlignment="center" title="1min" id="z2a-Wh-3Vs">
+                            <color key="backgroundColor" red="0.40073525910000002" green="0.6465337873" blue="0.68632298709999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="EMH-XH-aZx" kind="push" id="8PW-f2-HYB"/>
+                            </connections>
+                        </button>
+                        <button width="136" alignment="left" verticalAlignment="center" title="6min" id="Yny-hs-ja8">
+                            <color key="backgroundColor" red="0.40073525910000002" green="0.6465337873" blue="0.68632298709999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="5EQ-fv-Rjz" kind="push" id="hlv-ci-cZn"/>
+                            </connections>
+                        </button>
+                        <button width="136" alignment="left" verticalAlignment="center" title="12min" id="h6f-nS-3IN">
+                            <color key="backgroundColor" red="0.40073525910000002" green="0.6465337873" blue="0.68632298709999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="qkd-Rz-mK0" kind="push" id="fzM-yg-FSB"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="438" y="62"/>
+        </scene>
+        <!--Min Third Interface Controller-->
+        <scene sceneID="9QC-4p-goC">
+            <objects>
+                <controller id="qkd-Rz-mK0" customClass="MinThirdInterfaceController" customModule="NapTimerWatch_Extension">
+                    <items>
+                        <timer width="132" height="85" alignment="left" textAlignment="center" id="Eom-4c-B1J">
+                            <fontDescription key="font" type="system" pointSize="30"/>
+                        </timer>
+                        <button width="136" height="30" alignment="left" title="昼寝開始" id="Hv4-Og-Fid">
+                            <color key="backgroundColor" red="0.40073525910000002" green="0.6465337873" blue="0.68632298709999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="StartActionThird" destination="qkd-Rz-mK0" id="wun-Jm-KQR"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="myTimerButtonThird" destination="Hv4-Og-Fid" id="c8i-5Z-hU5"/>
+                        <outlet property="myTimerThird" destination="Eom-4c-B1J" id="vrg-9n-lE1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="744" y="466"/>
+        </scene>
+        <!--Min Second Interface Controller-->
+        <scene sceneID="pw1-bJ-SVD">
+            <objects>
+                <controller id="5EQ-fv-Rjz" customClass="MinSecondInterfaceController" customModule="NapTimerWatch_Extension">
+                    <items>
+                        <timer width="136" height="84" alignment="left" textAlignment="center" id="C9y-29-lv7">
+                            <fontDescription key="font" type="system" pointSize="30"/>
+                        </timer>
+                        <button width="136" height="30" alignment="left" title="昼寝開始" id="lHc-5I-XWv">
+                            <color key="backgroundColor" red="0.40073525910000002" green="0.6465337873" blue="0.68632298709999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="StartActionSecond" destination="5EQ-fv-Rjz" id="J1R-8y-mik"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="myCountDownSecond" destination="C9y-29-lv7" id="uBT-xP-cWo"/>
+                        <outlet property="myTimerButtonSecond" destination="lHc-5I-XWv" id="6lG-2J-1Ev"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="744" y="86"/>
+        </scene>
+        <!--Min Interface Controller-->
+        <scene sceneID="IbR-lZ-696">
+            <objects>
+                <controller id="EMH-XH-aZx" customClass="MinInterfaceController" customModule="NapTimerWatch_Extension">
+                    <items>
+                        <timer width="136" height="87" alignment="left" textAlignment="center" id="iiC-nJ-MY7">
+                            <fontDescription key="font" type="system" pointSize="30"/>
+                        </timer>
+                        <button width="136" height="30" alignment="left" title="昼寝開始" id="yhG-p7-weZ">
+                            <color key="backgroundColor" red="0.40073525910000002" green="0.6465337873" blue="0.68632298709999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="StartActionFirst" destination="EMH-XH-aZx" id="Owp-3b-ByR"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="myCountDownT" destination="iiC-nJ-MY7" id="SO9-78-KzM"/>
+                        <outlet property="napButton1" destination="yhG-p7-weZ" id="rqu-L1-OYj"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="744" y="-272"/>
+        </scene>
+    </scenes>
+</document>
